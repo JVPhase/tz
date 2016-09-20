@@ -1,0 +1,628 @@
+/* миксин, подключает шрифты */
+
+@import "bourbon/bourbon"
+
+body
+	font-family: 'HelveticaNeuecyr'
+	font-weight: 400
+	font-size: 14pt
+	min-width: 1320px
+	position: relative
+	line-height: normal
+	-webkit-font-smoothing: antialiased /* сглаживает шрифты*/
+	border: 0px solid
+	color: #666666
+	background: url(img/backg.jpg) center top no-repeat
+	opacity: 0.5
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+p
+	font-size: 14px
+	line-height: 16.7px
+	margin-top: 0px
+	margin-bottom: 34px
+
+h1
+	font-weight: 500
+	margin-top: 49px
+	margin-bottom: 57px
+	text-align: center
+	font-size: 18pt
+	position: relative
+	left: -4px
+
+h2
+	font-size: 13.5pt
+	font-weight: 500
+	margin-bottom: 12pt
+	margin-top: 30pt
+
+
+.header
+	min-width: 1320px
+	height: 150px
+	position: absolute
+	top: 0
+	left: 0
+	right: 0
+	background-color: rgba(255, 255, 255, 0.8)
+	z-index: 20
+
+.header #head
+	width: 1320px
+	margin: auto
+
+.logo
+	width: 260px
+
+
+.main_menu
+	position: relative
+	float: right
+	font-size: 11.8pt
+	letter-spacing: 0.3px
+	font-weight: 100
+	color: #666666
+	height: 150px
+	padding: 0px
+	margin-top: 0px
+	margin-bottom: 0px
+	margin-right: 0px
+
+.main_menu, .main_menu ul
+	list-style: none
+	list-style-position: none
+
+.main_menu ul
+	position: absolute
+
+
+.main_menu > li
+	float: left
+	height: 150px
+
+.main_menu li a p
+	margin-top: 15px
+	margin-bottom: 15px
+
+.main_menu li a p:nth-child(2)
+	position: relative
+	top: 14.5px
+	font-size: 11.8pt
+	line-height: 30px
+
+.main_menu li a
+	line-height: 30px
+
+.main_menu li:nth-child(1) a p:nth-child(2)
+	margin-left: 29px
+	margin-right: 32px
+
+.main_menu li:nth-child(2) a p:nth-child(2)
+	margin-left: 27px
+	margin-right: 27px
+
+.main_menu li:nth-child(3) a p:nth-child(2)
+	margin-left: 28px
+	margin-right: 17px
+
+.main_menu li:nth-child(4) a p:nth-child(2)
+	margin-left: 53px
+	margin-right: 49px
+
+.main_menu li:hover,
+	background-color: #ff9000
+	a p
+		color: #ffffff
+
+.main_menu li a
+	display: block
+	text-decoration: none
+	color: #666666
+
+.main_menu > li > a > p > img
+	position: relative
+	top: 14px
+
+.main_menu > li:nth-child(2) > a > p:nth-child(1) >img
+	margin-top: 0px
+	left: 0px
+
+.main_menu > li:nth-child(3) > a > p:nth-child(1) >img
+	margin-top: 0px
+	left: 7px
+
+.main_menu > li:nth-child(4) > a > p:nth-child(1) >img
+	margin-top: 0px
+	left: 3px
+
+.main_menu a
+	margin-top: 1px
+
+.main_menu > li > ul
+	display: none
+	margin-top: 23px
+	padding: 0
+
+.main_menu li li
+	background-color: rgba(255, 255, 255, 0.8)
+
+.main_menu li li:hover
+	a
+		color: #ffffff
+
+.contact
+	width: 323px
+	color: #666666
+	height: 150px
+	> p
+		top: -3px
+		left: 120px
+		position: relative
+		margin-bottom: 0px
+		margin-top: 24px
+		width: 193px
+		font-size: 18.01pt
+		line-height: 29px
+
+.ya-share2
+	position: relative
+	z-index: 15
+	top: 8px
+	left: 145px
+	width: 160px
+	margin: 0px
+	padding: 0px
+
+.buttons
+	width: 323px
+	position: relative
+	top: 40px
+	left: 0px
+
+.feedback, .email
+	color: #ffffff
+	font-weight: 500
+	width: 159px
+	height: 30px
+	border-bottom-left-radius: 10px
+	border-bottom-right-radius: 10px
+	background-color: #ffffff
+	border: 0px
+	padding: 0px
+	box-shadow: 1px 0.25px 1px grey
+	-webkit-box-shadow: 1px 0.25px 1px grey
+	-moz-box-shadow: 1px 0.25px 1px grey
+	p
+		font-size: 10.4pt
+		line-height: normal
+
+
+.feedback
+	position: relative
+	float: left
+	background-color: #38a7f5
+
+.fa-phone
+	font-size: 18.2pt
+	position: absolute
+	top: 5px
+	left: 8px
+
+.fa-envelope
+	font-size: 15.1pt
+	position: absolute
+	top: 4px
+	left: 14px
+
+.feedback > p
+	margin-top: -3px
+	margin-bottom: 0
+	margin-left: 24px
+
+.email > p
+	margin-top: -2px
+	margin-bottom: 0
+	margin-left: 29px
+
+.email
+	position: relative
+	float: right
+	background-color: #ff9000
+
+.slider
+	background-color: #ffffff
+	width: 100%
+	height: 600px
+	border: 0px solid
+	margin: auto
+	position: relative
+	z-index: 1
+
+#slides
+	display: none
+	height: 600px
+
+
+#slides img
+	filter: blur(10px)
+	-webkit-filter: blur(10px)
+
+.out
+	width: 1360px
+	height: 600px
+	position: absolute
+	z-index: 10
+	min-width: 200px
+	overflow: auto
+	margin: auto
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+
+.angle_part
+	position: absolute
+	z-index: 50
+	top: 490px
+	width: 0
+	height: 0
+	border: 10px solid transparent
+	border-color: #0078cd #0078cd transparent transparent
+
+.angle:before, .angle:after
+	content: ""
+	display: block
+	position: absolute
+	z-index: 40
+	width: 0
+	height: 0
+	border-top-width: 30px
+	border-right-width: 30px
+	border-bottom-width: 30px
+	border-left-width: 21px
+	border-top-style: solid
+	border-right-style: solid
+	border-bottom-style: solid
+	border-left-style: solid
+	border-top-color: transparent
+	border-right-color: transparent
+	border-bottom-color: transparent
+	border-left-color: transparent
+	-moz-border-top-colors: none
+	-moz-border-right-colors: none
+	-moz-border-bottom-colors: none
+	-moz-border-left-colors: none
+	border-image-source: none
+	border-image-slice: 100% 100% 100% 100%
+	border-image-width: 1 1 1 1
+	border-image-outset: 0 0 0 0
+	border-image-repeat: stretch stretch
+	border-right: 0
+	top: 430px
+	padding-left: 20px
+
+.angle:nth-child(1):before
+	width: 350px
+	height: 60px
+	background: #38a7f5
+
+.angle:nth-child(1):after
+	left: 350px
+	border-left-color: #38a7f5
+
+.note
+	position: relative
+	z-index: 50
+	font-size: 18pt
+	font-weight: 500
+	color: #ffffff
+	top: 448px
+	right: 1021px
+	float: right
+
+
+.slideshow
+	display: none
+	width: 1320px
+	height: 600px
+	position: absolute
+	z-index: 10
+	min-width: 200px
+	overflow: auto
+	margin: auto
+	top: 0
+	left: 0
+	bottom: 0
+	right: 0
+
+.content
+	background-color: #ffffff
+	width: 1320px
+	border: 0px solid
+	margin: auto
+	position: relative
+	z-index: 1
+
+.advantages
+	background-color: #ffffff
+	width: 1320px
+	border: 0px solid
+	margin: auto
+	position: relative
+	z-index: 1
+
+.advantages table
+	width: 1320px
+
+.adv1, .adv2, .adv3, .adv4, .adv5, .adv6
+	position: relative
+	z-index: 50
+	background-size: cover
+
+.adv1
+	background-image: url('img/1.png')
+	width: 65px
+	height: 65px
+	top: 18px
+	left: 21px
+
+.adv2
+	background-image: url('img/2.png')
+	width: 57px
+	height: 57px
+	top: 21px
+	left: 21px
+
+.adv3
+	background-image: url('img/3.png')
+	width: 60px
+	height: 72px
+	top: 14px
+	left: 20px
+
+.adv4
+	background-image: url('img/4.png')
+	width: 27px
+	height: 44px
+	top: 16px
+	left: 28px
+
+.adv5
+	background-image: url('img/5.png')
+	width: 56px
+	height: 68px
+	top: 17px
+	left: 21px
+
+.adv6
+	background-image: url('img/6.png')
+	width: 75px
+	height: 65px
+	top: 18px
+	left: 12px
+
+.circle
+	width: 100px
+	height: 100px
+	border-radius: 50px
+	background-color: #ff9000
+	top: 1px
+	position: relative
+	z-index: 50
+
+.text td
+	color: #ff9000
+
+.text td p
+	position: relative
+	margin: 0
+	width: 100px
+	font-size: 13.5pt
+	font-weight: 500
+
+.text td:nth-child(1) p
+	left: 66px
+
+.text td:nth-child(2) p
+	left: 66px
+
+.text td:nth-child(3) p
+	left: 85px
+
+.text td:nth-child(4) p
+	left: 83px
+
+.text td:nth-child(5) p
+	left: 81px
+
+.text td:nth-child(6) p
+	left: 76px
+
+.advantages table tr:nth-child(2) > td:nth-child(1) > div
+	left: 55px
+
+.advantages table tr:nth-child(2) > td:nth-child(2) > div
+	left: 56px
+
+.advantages table tr:nth-child(2) > td:nth-child(3) > div
+	left: 57.5px
+
+.advantages table tr:nth-child(2) > td:nth-child(4) > div
+	left: 59px
+
+.advantages table tr:nth-child(2) > td:nth-child(5) > div
+	left: 61.5px
+
+.advantages table tr:nth-child(2) > td:nth-child(6) > div
+	left: 64px
+
+.desc td
+	font-weight: 100
+	padding-top: 5px
+	font-size: 10.5pt
+	width: 220px
+	p
+		width: 150px
+		text-align: center
+		position: relative
+		margin: 0px
+
+.desc td:nth-child(1) p
+	left: 28px
+
+.desc td:nth-child(2) p
+	left: 30px
+
+.desc td:nth-child(3) p
+	left: 32px
+
+.desc td:nth-child(4) p
+	left: 34px
+
+.desc td:nth-child(5) p
+	left: 36px
+
+.desc td:nth-child(6) p
+	left: 38px
+
+.reviews
+	background-color: #ffffff
+	width: 1320px
+	height: 604px
+	border: 0px solid
+	margin: auto
+	position: relative
+	z-index: 1
+	margin-top: 66px
+
+.reviews h1
+	left: -2px
+	margin-bottom: 48px
+
+.reviews table
+	width: 1320px
+	height: 450px
+
+.frame
+	border: 1px solid gray
+	width: 320px
+	height: 451px
+	position: relative
+
+.reviews td:nth-child(1) > .frame
+	left: 53px
+
+.reviews td:nth-child(2) > .frame
+	left: 57px
+
+.reviews td:nth-child(3) > .frame
+	left: 60px
+
+.sert1, .sert2, .sert3
+	position: relative
+	z-index: 50
+	background-size: cover
+	top: 13px
+	left: 9px
+	width: 296px
+	height: 423px
+
+.sert1
+	background-image: url('img/sert1.png')
+
+.sert2
+	background-image: url('img/sert2.png')
+
+.sert3
+	background-image: url('img/sert3.png')
+
+.footer
+	background-color: #38a7f5
+	min-width: 1320px
+	height: 100px
+	border: 0px solid
+	margin: auto
+	position: relative
+	z-index: 1
+	bottom: 0
+	left: 0
+	right: 0
+	color: #ffffff
+	margin-top: 13px
+	p
+		font-size: 12pt
+		position: relative
+		z-index: 50
+		top: 44px
+	table
+		width: 1320px
+		height: 50px
+		margin: auto
+
+.counter
+	position: relative
+	width: 88px
+	height: 31px
+	z-index: 50
+	background-image: url('img/counter.png')
+	background-size: cover
+	top: -26px
+	left: 1224px
+
+@-moz-document url-prefix()
+	.desc td
+		padding-top: 1px
+	h1
+		margin-top: 48px
+	.reviews
+		margin-top: 65px
+	.footer
+		margin-top: 15px
+
+@supports (-ms-ime-align:auto)
+	body
+		letter-spacing: -0.02px
+	.desc td
+		padding-top: 3px
+	.sert1, .sert2, .sert3
+		left: 10px
+	.note
+		letter-spacing: -0.19px
+	.main_menu li:nth-child(2) a p:nth-child(2)
+		margin-right: 24px
+
+_:-ms-lang(x), body
+	letter-spacing: -0.02px
+
+_:-ms-lang(x), .desc td
+	padding-top: 3px
+
+_:-ms-lang(x), .sert1, .sert2, .sert3
+	left: 10px
+
+_:-ms-lang(x), .note
+	letter-spacing: -0.19px
+
+_:-ms-lang(x), .main_menu li:nth-child(2) a p:nth-child(2)
+	margin-right: 25px
+
+_:-ms-lang(x), .text td:nth-child(1) p
+	left: 65px
+	letter-spacing: -0.4px
+
+/* подложка для правильного отображения выпадающего меню в ie9, ie10*/
+.invis_area
+	display: none
+	position: absolute
+	background-color: rgba(255, 255, 255, 0.01)
+	width: 321px
+	height: 186px
+	z-index: 0
+	top: 150px
